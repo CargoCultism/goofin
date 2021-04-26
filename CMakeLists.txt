@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(Tutorial)
-
+message("Tutorial source dir: ${Tutorial_SOURCE_DIR}")
 add_subdirectory(src)
 include_directories(/usr/include/noise)
 find_library(LIBNOISE libnoise.a)
