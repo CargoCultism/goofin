@@ -2,7 +2,7 @@
 #include "IDummy.h"
 
 namespace Dummylib{
-    class Lazyguy : public IDummy{
+    class Lazyguy : private IDummy{
     public:
         bool doNothing(int);
     };
