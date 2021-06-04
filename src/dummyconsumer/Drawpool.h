@@ -14,8 +14,6 @@ public:
         this->mPool = iData;
         srand (time(NULL));
     }
-    T drawElement(){
-        return mPool[0];
-    }
+    T drawElement();
 };
 }

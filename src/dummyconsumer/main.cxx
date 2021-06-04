@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "Lazyguy.h"
+#include "../dummylib/Lazyguy.h"
 #include "Drawpool.h"
 
 int main(int argc, char* argv[]){
