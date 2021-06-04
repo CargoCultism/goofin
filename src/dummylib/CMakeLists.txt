@@ -1,2 +1,3 @@
 add_library(dummylib
-    Lazyguy.cxx)
+    Lazyguy.cxx
+    Drawpool.cxx)
