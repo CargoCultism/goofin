@@ -10,10 +10,7 @@ class Drawpool{
 private:
     std::vector<T> mPool;
 public:
-    Drawpool(std::vector<T> iData){
-        this->mPool = iData;
-        srand (time(NULL));
-    }
+    Drawpool(std::vector<T> iData);
     T drawElement();
 };
 }
