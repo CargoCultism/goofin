@@ -1,2 +1,2 @@
 add_executable(scopedEnumDemo scopedEnumDemo.cxx)
-add_executable(scopedEnumBoostDemo scopedEnumBoostDemo.cxx)
+    add_executable(scopedEnumBoostDemo scopedEnumBoostDemo.cxx)

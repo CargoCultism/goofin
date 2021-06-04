@@ -1,2 +1,1 @@
-add_library(dummylib
-    Lazyguy.cxx)
+add_library(dummylib Lazyguy.cxx)
