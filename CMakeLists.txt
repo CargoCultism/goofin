@@ -18,3 +18,12 @@ elseif(NOT LIBNOISE)
     message("libnoise not found")
 endif()
 
+find_program(HAVE_CLANG_FORMAT clang-format)
+
+if(HAVE_CLANG_FORMAT)
+    message("found clang-format")
+    file(GLOB_RECURSE ALL_CXX_FILES ${PROJECT_ROOT_DIR}/src/*.cxx)
+    file(GLOB_RECURSE ALL_H_FILES ${PROEJCT_ROOT_DIR}/src/*.h)
+file(GLOB_RECURSE ALL_CMAKE_FILES ${PROJECT_ROOT_DIR}/CMakeLists.txt)
+endif()
+            
