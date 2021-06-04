@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_CXX_CLANG_TIDY
+  clang-tidy;
+  -header-filter=.;
+  -checks=*;)
+
 project(Tutorial)
 message("Tutorial source dir: ${Tutorial_SOURCE_DIR}")
 add_subdirectory(src)
@@ -17,3 +22,5 @@ if(LIBNOISE)
 elseif(NOT LIBNOISE)
     message("libnoise not found")
 endif()
+
+
