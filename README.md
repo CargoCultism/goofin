@@ -5,3 +5,6 @@ An unordered repository of stuff I tend to forget.
     * git checkout -b <new_branch>
     * git push -u origin <new_branch>
     * See differences between base branch `<base>` (e.g. `main`) and current state of branch (called `<branch>/<branch name>`):  ``git diff `git merge-base <base> <branch>/<branch name>` <branch>/<branch name>``   
+ * Clang-format:
+   * `clang-format <file>` shows re-formatted file
+   * `clang-format -i <file>` reformats file in-place
