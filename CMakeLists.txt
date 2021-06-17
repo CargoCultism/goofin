@@ -26,4 +26,6 @@ if(HAVE_CLANG_FORMAT)
     file(GLOB_RECURSE ALL_H_FILES ${PROEJCT_ROOT_DIR}/src/*.h)
 file(GLOB_RECURSE ALL_CMAKE_FILES ${PROJECT_ROOT_DIR}/CMakeLists.txt)
 endif()
+
+add_custom_target(apply-clang-format COMMAND ${HAVE_CLANG_FORMAT} -i ${ALL_CXX_FILES} ${ALL_H_FILES}) 
             
