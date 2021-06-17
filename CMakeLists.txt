@@ -17,3 +17,4 @@ if(LIBNOISE)
 elseif(NOT LIBNOISE)
     message("libnoise not found")
 endif()
+
